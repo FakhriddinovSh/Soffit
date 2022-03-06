@@ -4,10 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scss-template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
+    <title>Soffit</title>
 </head>
 <body>
+    <h1 class="visually-hidden">Soffit</h1>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="navbar__logo">
+                <img src="./images/logo.svg" alt="">
+            </a>
+
+            <div class="navbar__right">
+                <div class="navbar__nav">
+                    <ul class="navbar__nav__list">
+                        <li class="navbar__nav__list__item">
+                            <a href="index.html">Services</a>
+                        </li>
+                        <li class="navbar__nav__list__item">
+                            <a href="index.html">Portfolio</a>
+                        </li>
+                        <li class="navbar__nav__list__item">
+                            <a href="index.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
     
+                <div class="navbar__language">
+                    <a class="navbar__language__list" href="#">Uz</a>
+                    <a class="navbar__language__list" href="#">Ru</a>
+                    <a class="navbar__language__list" href="#">En</a>
+                </div>
+            </div>
+
+            <!-- <div class="navbar__toggle navbar__toggle--active">
+                <span></span>
+            </div> -->
+
+            <!-- <form method="get" class="navbar__form">
+                <input type="checkbox" id="check" class="navbar__form__input">
+                <label for="check" class="navbar__form__label checkbtn">
+                    <img src="./images/hamburger.svg" alt="hamburger-menu">
+                </label>
+            </form> -->
+
+            <div id="hamburger" class="navbar__menu navbar__nav__list--active">
+                <img id="hamburger__menu" src="./images/hamburger.svg" alt="hamburger-menu">
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="main">
+        <section class="hero">
+            <div class="box container">
+                <div class="box__left">
+                    <!-- First box -->
+                    <div class="box__first">
+                        <form method="post" class="box__first__form">
+                            <label class="box__first__form__label" style="display: block;" for="form__input">Ism Familiya</label>
+                            <input class="box__first__form__input" type="text" placeholder="Ismingizni kiriting" required name="form__input">
+                        </form>
+
+                        <form method="post" class="box__second__form">
+                            <label class="box__second__form__label" style="display: block;" for="form__input">Companiyani kiriting</label>
+                            <input class="box__second__form__input" type="text" placeholder="Companiya" required name="form__input">
+                        </form>
+                    </div>
+
+                    <!-- Second box -->
+                    <div class="box__third">
+                        <form method="post" class="box__third__form">
+                            <label class="box__third__form__label" style="display: block;" for="form__input">Telegram username</label>
+                            <input class="box__third__form__input" type="text" placeholder="Username" required name="form__input">
+                        </form>
+
+                        <form method="post" class="box__fourth__form">
+                            <label class="box__fourth__form__label" style="display: block;" for="form__input">Phone number</label>
+                            <input class="box__fourth__form__input" type="number" placeholder="+998 99" required name="form__input">
+                        </form>
+                    </div>
+                    
+                    <!-- Third box -->
+                    <div class="box__fivth">
+                        <form method="post" class="box__fivth__form">
+                            <label class="box__fivth__form__label" style="display: block;" for="form__input">Sayni turini tanlang</label>
+                            <select class="box__fivth__form__selection" name="selection">
+                                <option class="box__fivth__option" value="1" selected disabled>Corparative sayt</option>
+                                <option class="box__fivth__option" value="2">Olx</option>
+                                <option class="box__fivth__option" value="3">Kunuz</option>
+                            </select>
+                        </form>
+
+                        <form method="post" class="box__sixth__form">
+                            <label class="box__sixth__form__label" style="display: block;" for="form__input">Sizga bo’glanish usulini tanlang</label>
+                            <select class="box__sixth__form__selection" name="selection">
+                                <option value="1" selected disabled>Telegram</option>
+                                <option value="2">Olx</option>
+                                <option value="3">Kunuz</option>
+                            </select> 
+                        </form>
+                    </div>
+
+                    <!-- Fourth box -->
+                    <div class="box__seventh">
+                        <form method="post" class="box__seventh__form">
+                            <label class="box__seventh__form__label" style="display: block;" for="form__input">Message</label>
+                            <input class="box__seventh__form__input" type="text">
+                        </form>
+                    </div>
+
+                    <button class="box__left__btn" type="submit">Jonatish<img class="box__left__btn__img"  src="./images/send.svg" alt="send">
+                    </button>
+                </div>
+
+                <div class="box__right">
+                    <h2 class="box__right__title">Ux & Ui design</h2>
+                    <p class="box__right__description">In the current tech scenario, one can’t predict what device their user will use to interact with a product. This is why it’s always a good idea to build something that supports all devices. However it is nearly impossible to design for every screen size with so many .</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<script src="./js/main.js"></script>
 </body>
 </html>
